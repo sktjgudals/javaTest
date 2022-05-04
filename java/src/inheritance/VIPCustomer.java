@@ -11,6 +11,7 @@ public class VIPCustomer extends Customer {
 	}
 	
 	public int getAgentID() {
+		System.out.println("asd");
 		return agentID;
 	}
 }
