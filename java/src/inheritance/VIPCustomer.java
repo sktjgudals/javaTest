@@ -22,18 +22,17 @@ public class VIPCustomer extends Customer {
 	}
 
 	//Source ->  Override
-//	@Override
-//	public int calcPrice(int price) {
-//		bonusPoint += price * bonusRatio;
-//		return price - (int)(price*saleRatio);
-//	}
-	
-//	Annotation
 	@Override
 	public int calcPrice(int price) {
-		// TODO Auto-generated method stub
-		return super.calcPrice(price);
+		bonusPoint += price * bonusRatio;
+		return price - (int)(price*saleRatio);
 	}
+	
+//	Annotation
+//	@Override
+//	public int calcPrice(int price) {
+//		return super.calcPrice(price);
+//	}
 
 	public int getAgentID() {
 		return agentID;
