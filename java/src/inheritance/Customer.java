@@ -10,14 +10,24 @@ public class Customer {
 	public Customer () {
 		customerGrade = "SILVER";
 		bonusRatio = 0.01;
+		System.out.println("Customer() created");
 	}
 
+	public Customer(int customerID,String customerName) {
+		this.customerID = customerID;
+		this.customerName = customerName;
+		customerGrade = "SILVER";
+		bonusRatio = 0.01;
+		System.out.println("create");
+	}
+	
 	public int calcPrice(int price) {
 		bonusPoint += price * bonusRatio;
 		return price;
 	}
+	
 	public String showCustomerInfo() {
-		return customerName+ "sir " + customerGrade + " point is " +bonusPoint;
+		return customerName + " is " + customerGrade + " point is " +bonusPoint;
 	}
 	
 	public int getCustomerID() {
@@ -32,7 +42,7 @@ public class Customer {
 		return customerName;
 	}
 	
-	public void getCustomerName(String name) {
+	public void setCustomerName(String name) {
 		this.customerName =name;
 	}
 	
