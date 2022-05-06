@@ -7,7 +7,7 @@ public class OverridingTest2 {
 		vc.bonusPoint = 1000;
 		
 		System.out.println(vc.calcPrice(10000));
-
+		//result : 9000;
 	}
 
 }
