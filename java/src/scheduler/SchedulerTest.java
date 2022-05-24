@@ -2,7 +2,8 @@ package scheduler;
 
 import java.io.IOException;
 
-public class SchedulerTest {
+
+public class SchedulerTest  {
 
 	public static void main(String[] args) throws IOException {
 		System.out.println("a counseling system");
